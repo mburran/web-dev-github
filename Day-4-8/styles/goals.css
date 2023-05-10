@@ -1,0 +1,82 @@
+body {
+  text-align: center;
+  background-color: rgb(233, 215, 207);
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(1, 24, 16);
+  margin-bottom: 50px;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  color: rgb(71, 62, 62);
+  margin: 0px 0;
+}
+/* #description {
+  margin-bottom: 36px;
+} */
+header p {
+  margin-bottom: 64px;
+}
+#description {
+  margin: 12px 0;
+
+}
+ol {
+  list-style: none;
+  width: 500px;
+  margin: 36px auto 0 auto;
+  padding: 0;
+}
+p {
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 36px;
+}
+li {
+  background-color: rgb(223, 136, 124);
+  border-radius: 6px;
+  margin: 32px;
+  padding: 16px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(167, 1, 78);
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 12px 48px;
+  border: 1px solid rgb(167, 1, 78);
+  display: inline-block;
+  margin: 0px 0;
+}
+a:hover {
+  text-decoration: none;
+  background-color: rgb(180, 12, 90);
+}
+h2 {
+  color: rgb(78, 13, 5);
+  font-family: "Oswald", sans-serif;
+}
+main p {
+  margin: 12px;
+  color: rgb(71, 29, 22);
+}
+.highlight-goal {
+  background-color: rgb(224, 115, 101);
+}
+
+/* ?why does li style take priority over ol, and why does the bottom-most rule take priority?
+  Answer: "Indenting like family tree, children "nested" in parents, each child will by default
+    follow the parents set rules, but if they are given their own instructions, they now follow that
+
+    Summary: Elements will follow the rules of the "youngest/most-indented" place defined (which is why li takes priority over ol)
+    1. Inheritance: (selected container rules apply to descendants aka parent rules)
+    2. Cascading: (multiple rules can be applied to the same element ex. list-style, color, body etc., some are inherited, some are local definitions !!!RECENCY BIAS!!!)
+    3. Specificity: (more specific selector's rule wins over less specific selector (ex. li more specific than ol))
+  */
+
+/* CSS Box Model:
+Padding creates a large area of padding around the content
+Border defines the edge of the button (border<padding will display border)
+Margin defines the space between the padding and border
+*/
